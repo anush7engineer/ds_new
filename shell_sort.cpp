@@ -30,15 +30,15 @@ int shellSort(int arr[], int n)
     return 0; 
 } 
   
-void printArray(int arr[], int n) 
+void printArray(int arr[], int j) 
 { 
-    for (int i=0; i<n; i++) 
+    for (int i=0; i<j; i++) 
         cout << arr[i] << " "; 
 } 
   
 int main() 
 { 
-    int arr[] = {12, 34, 54, 2, 3}, i; 
+    int arr[] = {12, 34, 54, 2, 3, 22, 33}, i; 
     int n = sizeof(arr)/sizeof(arr[0]); 
   
     cout << "Array before sorting: \n"; 
