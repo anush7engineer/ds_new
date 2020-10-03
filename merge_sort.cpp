@@ -17,7 +17,7 @@ void merge(int arr[], int l, int m, int r)
     for (i = 0; i < n1; i++) 
         L[i] = arr[l + i]; 
     for (j = 0; j < n2; j++) 
-        R[j] = arr[m + 1 + j]; 
+        R[j] = arr[m + j]; 
   
     /* Merge the temp arrays back into arr[l..r]*/
     i = 0; // Initial index of first subarray 
@@ -69,8 +69,6 @@ void mergeSort(int arr[], int l, int r)
     } 
 } 
   
-/* UTILITY FUNCTIONS */
-/* Function to print an array */
 void printArray(int A[], int size) 
 { 
     int i; 
@@ -82,7 +80,7 @@ void printArray(int A[], int size)
 /* Driver program to test above functions */
 int main() 
 { 
-    int arr[] = { 12, 11, 13, 5, 6, 7 }; 
+    int arr[] = { 12, 11, 13, 5, 6, 7, 8, 9 }; 
     int arr_size = sizeof(arr) / sizeof(arr[0]); 
   
     printf("Given array is \n"); 
